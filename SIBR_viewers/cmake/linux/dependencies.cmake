@@ -123,8 +123,8 @@ sibr_addlibrary(
 )
 
 # CLUSTER
-#find_package(embree 3.0 REQUIRED PATHS "/data/graphdeco/share/embree/usr/local/lib64/cmake/" )
-find_package(embree 3.0 )
+#find_package(embree 3.0 REQUIRED PATHS "/home/chrkap/phd/code/Gaussian-Splatting-Monitor/SIBR_viewers/3rd-party/embree-3.13.5.x86_64.linux" )
+find_package(embree 4.0 )
 
 ###################
 ## Find eigen3

@@ -85,7 +85,7 @@ namespace sibr {
 		*/
 //#define HEADLESS
 #ifndef HEADLESS
-		bool encode(AVFrame *frame);
+		bool encode(AVFrame *frame, AVPacket *pkt);
 #endif 
 
 		bool initWasFine = false; ///< Was the encoder init properly.
@@ -98,6 +98,7 @@ namespace sibr {
 		
 #ifndef HEADLESS
 		AVFrame * frameYUV = NULL; ///< Working frame.
+		AVPacket * framePkt = NULL;
 #endif
 		cv::Mat cvFrameYUV; ///< Working frame data.
 		sibr::Vector2i yuSize; ///< Working size.
